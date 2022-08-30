@@ -8,7 +8,14 @@ modules:
       function: sprint
       name: required sprint
       description: sample description
+    - key: validators-create-issue
+      name: create Issue validator
+      description: Validate field values on create
+      expression: issue.assignee != null
+      errorMessage: rly
   function:
+    - key: create
+      handler: index.createValidator
     - key: assignee
       handler: index.requireAssignee
     - key: sprint
