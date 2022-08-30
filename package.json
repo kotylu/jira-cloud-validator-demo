@@ -1,0 +1,10 @@
+{
+  "name": "jira-workflow-validator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@forge/api": "^2.7.0"
+  }
+}

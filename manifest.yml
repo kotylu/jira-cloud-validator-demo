@@ -1,0 +1,20 @@
+modules:
+  jira:workflowValidator:
+    - key: validators-require-assignee
+      function: assignee
+      name: required assignee
+      description: A Jira workflow validator example.
+    - key: validators-require-sprint
+      function: sprint
+      name: required sprint
+      description: sample description
+  function:
+    - key: assignee
+      handler: index.requireAssignee
+    - key: sprint
+      handler: index.requireSprint
+app:
+  id: ari:cloud:ecosystem::app/3c9d51a7-ea3f-4753-8f76-f2f5d04fc970
+permissions:
+  scopes:
+    - read:jira-work
